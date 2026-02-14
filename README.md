@@ -33,6 +33,15 @@ The stack uses Nginx, PHP-FPM, and MySQL connected through Docker Compose networ
 
 ---
 
+## Docker Services
+| Service | Image | Purpose |
+|--------|------|---------|
+| web | nginx | Serves frontend |
+| app | bitnami/php-fpm | Processes PHP |
+| db | mysql | Stores data |
+
+---
+
 ## Project Structure
 
 ```
@@ -73,12 +82,6 @@ Threetier-Registration-webapp
 ## Access the Application
     http://ec2-public-ip/signup.html
 
----
 
-## Docker Services
-| Service | Image | Purpose |
-|--------|------|---------|
-| web | nginx | Serves frontend |
-| app | bitnami/php-fpm | Processes PHP |
-| db | mysql | Stores data |
-
+## Author
+Satish Pathade | DevOps Engineer
